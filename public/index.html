@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <section class="hero is-primary has-background-grey-dark">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Disaster Relief Dashboard
+            </h1>
+            <h2 class="subtitle">
+              Dash to the rescue
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <div class="notification" style="margin-bottom: 0">
+        Breaking News: <span id="newsAlert"></span>
+      </div>
+
+      <div class="tabs is-toggle is-fullwidth" style="margin-top:0">
+        <ul>
+          <li class="is-active"><a>Incoming Messages</a></li>
+          <li><a>Sent Messages</a></li>
+          <li><a>Data</a></li>
+        </ul>
+      </div>
+
+      <br>
+      <div class="container is-fluid columns">
+
+        <!-- unread messages -->
+        <table class="table is-striped is-fullwidth">
+          <thead>
+            <tr>
+              <th>Priority</th>
+              <th>Message</th>
+              <th>Phone Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>Text Message content</td>
+              <td>(919)999-9999</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Text Message content 2</td>
+              <td>(919)888-8888</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <aside class="menu column is-one-fifth">
+          <p class="menu-label">
+            General
+          </p>
+          <ul class="menu-list">
+            <li><a>Dashboard</a></li>
+            <li><a>Customers</a></li>
+          </ul>
+          <p class="menu-label">
+            Administration
+          </p>
+          <ul class="menu-list">
+            <li><a>Team Settings</a></li>
+            <li>
+              <a class="is-active">Manage Your Team</a>
+              <ul>
+                <li><a>Members</a></li>
+                <li><a>Plugins</a></li>
+                <li><a>Add a member</a></li>
+              </ul>
+            </li>
+            <li><a>Invitations</a></li>
+            <li><a>Cloud Storage Environment Settings</a></li>
+            <li><a>Authentication</a></li>
+          </ul>
+          <p class="menu-label">
+            Transactions
+          </p>
+          <ul class="menu-list">
+            <li><a>Payments</a></li>
+            <li><a>Transfers</a></li>
+            <li><a>Balance</a></li>
+          </ul>
+        </aside>
+
+        <section>
+          <img src="https://fuzzyscience.files.wordpress.com/2012/02/disasters51.jpg" style="height: 30%;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12927.222655335232!2d-79.05320545!3d35.902775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1582394676090!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </section> -->
+      </div>
+
+      <!-- <script src="/__/firebase/7.9.1/firebase-app.js"></script> -->
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+      <!-- <script src="/__/firebase/7.9.1/firebase-analytics.js"></script> -->
+    
+      <!-- Initialize Firebase -->
+      <!-- <script src="/__/firebase/init.js"></script> -->
+</body>
+</html>
