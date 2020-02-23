@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="firebase.js"></script>
 
 </head>
 <body>
-    <section class="hero is-primary has-background-grey-dark">
+    <section class="hero is-info has-background-grey-dark">
         <div class="hero-body">
           <div class="container">
             <h1 class="title">
@@ -20,15 +21,16 @@
             <h2 class="subtitle">
               Dash to the rescue
             </h2>
+            <button class="button" style="margin: 1em">Refresh Messages</button>
           </div>
         </div>
       </section>
 
-      <div class="notification is-danger" style="margin-bottom: 0;">
-        <strong>Breaking News: </strong><span id="newsAlert"></span>
+      <div class="notification" style="margin-bottom: 0; background-color:rgb(210, 240, 255)">
+        <strong>Latest Disaster: </strong><span id="newsAlert"></span>
       </div>
 
-      <div class="tabs is-toggle is-fullwidth" style="margin-top:0">
+      <div class="tabs is-toggle is-fullwidth is-radiusless is-primary" style="margin-top:0">
         <ul>
           <li id="unreadTab" class="is-active"><a>Messages</a></li>
           <li id="dataTab"><a>Data</a></li>
@@ -36,7 +38,6 @@
       </div>
 <!-- unread messages view goes here -->
       <div id="unreadView">
-        <button class="button">Refresh</button>
         <div id="response-container" style="display:none">
           <input class="input is-fullwidth" type="text" placeholder="Text input">
         </div>
@@ -57,18 +58,69 @@
 <!-- data goes here -->
         <div id="dataView" style="display:none">
           <div class="container">
-            <h1 class="title">Data Analysis</h1>
+            <h1 class="title is-centered">Data Analysis</h1>
+
+            <div class="row">
+              <div class="columns">
+                <div class="column is-one-third">
+                  <article class="panel is-info">
+                    <p class="panel-heading">
+                      Data
+                    </p>
+                    <!-- <p class="panel-tabs">
+                      <a class="is-active">All</a>
+                      <a>Maps</a>
+                      <a>Charts</a>
+                    </p> -->
+
+                    <a class="panel-block" id="link1">
+                      <!-- <span class="panel-icon">
+                        <i class="fas fa-map" aria-hidden="true"></i>
+                      </span> -->
+                      Disaster Map
+                    </a>
+                    <a class="panel-block" id="link2">
+                      Data Charts
+                    </a>
+                  </article>
+                </div>
+                <div class="column">
+                  <div class="box" id="box1">
+                    <div>
+                      <a href="https://public.tableau.com/views/Book1_15824342533580/Dashboard1?:display_count=y&publish=yes&:origin=viz_share_link">Link to map</a>
+                    </div>
+                    <div class='tableauPlaceholder' id='viz1582465745072' style='position: relative'><noscript><a href='#'>
+                      <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_15824342533580&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
+                      <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                      <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book1_15824342533580&#47;Dashboard1' />
+                      <param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_15824342533580&#47;Dashboard1&#47;1.png' /> 
+                      <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+                      <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>
+                      <script type='text/javascript'>   var divElement = document.getElementById('viz1582465745072');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                  </div>
+                  <div class="box" id="box2" style="display:none">
+                    <div>
+                      <img src="images/demo-news-coverage-of-disasters.png">
+                      <div>Example of disaster data from <a href="https://ourworldindata.org/natural-disasters">https://ourworldindata.org/natural-disasters</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
 
           </div>
         </div>
 
-      <!-- <script src="/__/firebase/7.9.1/firebase-app.js"></script> -->
+      <script src="/__/firebase/7.9.1/firebase-app.js"></script> -->
 
       <!-- TODO: Add SDKs for Firebase products that you want to use
           https://firebase.google.com/docs/web/setup#available-libraries -->
       <!-- <script src="/__/firebase/7.9.1/firebase-analytics.js"></script> -->
     
       <!-- Initialize Firebase -->
-      <!-- <script src="/__/firebase/init.js"></script> -->
+      <script src="/__/firebase/init.js"></script>
 </body>
 </html>

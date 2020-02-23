@@ -1,13 +1,21 @@
 $(document).ready(function() {
+// import firebase from './firebase'
+
+// const messagesRef = firebase.database().ref('pearlhacks2020')
+//     messagesRef.on('value', (snapshot) => {
+//       let messages = snapshot.val();
+//       console.log(messages)
+
 // reliefwebapi -- get most recent report
 function getReliefWeb(){
     $.ajax({
-      // url:"https://api.reliefweb.int/v1/reports?appname=apidoc&preset=latest&query[value]=earthquake&limit=1",
-      url:"https://api.reliefweb.int/v1/reports?appname=apidoc&preset=latest&limit=1",
+      url:"https://api.reliefweb.int/v1/disasters?appname=apidoc&preset=latest&limit=1",
+      // url:"https://api.reliefweb.int/v1/reports?appname=apidoc&preset=latest&limit=1",
       method:"GET"
     }).then(function(response){
       console.log(response);
-      var x = response.data[0].fields.title;
+      // var x = response.data[0].fields.title;
+      var x = response.data[0].fields.name;
       console.log(x)
       $("#newsAlert").text(x);
     })
@@ -21,7 +29,7 @@ var messages = [
     from: "+19192595847",
     to: "+19195252942",
     time: "February 22nd 2020 at 2:09:09 pm",
-    Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    Text: "There is a fire in the forest behind my house. I'm worried that it's spreading.",
     State: "received",
     tags: "fire"
   },
@@ -56,18 +64,19 @@ function createMessageTable() {
 
 
     var messageContainer = $(`<p data-index="${i}">`)
-    var newNumber = $(`<span class="phoneNumber" data-index="${i}">`).text(messages[i].from);
-    var newTime = $(`<span class="timeReceived" data-index="${i}">`).text(messages[i].time);
-    var newbr = $("<br>");
+    var newNumber = $(`<strong class="phoneNumber" data-index="${i}">`).text(messages[i].from);
+    var newTime = $(`<small class="timeReceived" data-index="${i}">`).text(messages[i].time);
+    newTime.css("margin","2em")
+    var newbr = $("<br>").css("margin","2em");
     var newMessage = $(`<span class="message" data-index="${i}">`).text(messages[i].Text);
     
-//     var messageContainer = $("<p>")
-//     var newNumber = $("<strong>").text(messages[i].from);
-//     var newTime = $("<small>").text(messages[i].time);
-//     newTime.css("margin-left", "2em");
-//     var newbr = $("<br>");
-//     newbr.css("margin", "2em")
-//     var newMessage = $("<span>").text(messages[i].Text)
+    // var messageContainer = $("<p>")
+    // var newNumber = $("<strong>").text(messages[i].from);
+    // var newTime = $("<small>").text(messages[i].time);
+    // newTime.css("margin-left", "2em");
+    // var newbr = $("<br>");
+    // newbr.css("margin", "2em")
+    // var newMessage = $("<span>").text(messages[i].Text)
 
     var newTagContainer = $("<nav>").addClass("level");
     newTagContainer = $("<nav>").addClass("is-mobile");
@@ -160,6 +169,23 @@ $(".input").on('keydown', function(e){
     $(this).val('');    
     console.log(yourResponse)
   }
+})
+
+$("#link1").on('click', function(e){
+  e.preventDefault();
+  $("#box2").css("display","none")
+  $("#box1").css("display", "");
+  // $("#link2").removeClass("active-panel")
+  // $("#link1").addClass("active-panel")
+
+})
+
+$("#link2").on('click', function(e){
+  e.preventDefault();
+  $("#box2").css("display","")
+  $("#box1").css("display", "none");
+  // $("#link1").removeClass("active-panel")
+  // $("#link2").addClass("active-panel")
 })
 
 
