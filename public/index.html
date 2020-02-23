@@ -24,14 +24,13 @@
         </div>
       </section>
 
-      <div class="notification" style="margin-bottom: 0">
-        Breaking News: <span id="newsAlert"></span>
+      <div class="notification is-danger" style="margin-bottom: 0;">
+        <strong>Breaking News: </strong><span id="newsAlert"></span>
       </div>
 
       <div class="tabs is-toggle is-fullwidth" style="margin-top:0">
         <ul>
-          <li id="unreadTab" class="is-active"><a>Incoming Messages</a></li>
-          <li id="sentTab"><a>Sent Messages</a></li>
+          <li id="unreadTab" class="is-active"><a>Messages</a></li>
           <li id="dataTab"><a>Data</a></li>
         </ul>
       </div>
@@ -43,34 +42,23 @@
         <br>
         <div class="container" id="unreadContainer">
           
-          <!-- insert unread messages -->
-          <!-- <table class="table is-fullwidth is-hoverable">
-            <thead>
-              <tr>
-                <th>Priority</th>
-                <th>Message</th>
-                <th>Phone Number</th>
-              </tr>
-            </thead>
-            <tbody id="unreadContainer">
-            </tbody>
-          </table> -->
-    
+
         </div>
       </div>
 
 <!-- sent messages view -->
-        <div id="sentView" style="display:none">
+        <!-- <div id="sentView" style="display:none">
           <h1>Sent Messages</h1>
 
 
-        </div>
+        </div> -->
 
 <!-- data goes here -->
         <div id="dataView" style="display:none">
+          <div class="container">
+            <h1 class="title">Data Analysis</h1>
 
-          <h1>Data Analysis</h1>
-          
+          </div>
         </div>
 
       <!-- <script src="/__/firebase/7.9.1/firebase-app.js"></script> -->
