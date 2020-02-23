@@ -13,28 +13,4 @@ $(document).ready(function() {
     };
     
     firebase.initializeApp(firebaseConfig);
-    
-    const database = firebase.database();
-    const messages = database.ref('messages');
-
-    const message = $(".active-message");
-
-    // create reference to db object
-    const dbRefObj = database().ref().child("message");
-
-    // sync object changes
-    dbRefObj.on('value', snap => console.log(snap.val()));
-
-    
-    // database.ref().on("value", function(snapshot) {
-    //     console.log(snapshot.val());
-    //     // Update the clickCounter variable with data from the database.
-    //     counter = snapshot.val().test;
-    //     // Update the html associated with the number.
-    //     $("#test").text(counter);
-    // }, function(errorObject) {
-    //     // In case of error this will print the error
-    //     console.log(`The read failed: ${errorObject.code}`);
-    // });
-
 });

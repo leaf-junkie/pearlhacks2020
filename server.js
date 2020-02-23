@@ -10,48 +10,23 @@ const server = http.createServer(handleRequest);
 
 // Generic function to handle requests and responses
 function handleRequest(req, res) {
+  // Saving the request data as a variable
+  var requestData = "";
+  // When the server receives data...
+  req.on("data", function(data) {
+    // Add it to requestData.
+    requestData += data;
+  });
 
-    // // Here we use the fs package to read our index.html file
-    //     fs.readFile(__dirname + "/index.html", function(err, data) {
-
-    //     // We then respond to the client with the HTML page by specifically telling the browser that we are delivering
-    //     // an html file.
-    //     res.writeHead(200, { "Content-Type": "text/html" });
-    //     res.end(data);
-    // });
-
-  // Send the below string to the client when the user visits the PORT URL
-  response.end("It Works!! Path Hit: " + request.url);
+  // When the request has ended...
+  req.on("end", function() {
+    // Log (server-side) the request method, as well as the data received!
+    console.log("You did a", req.method, "with the data:\n", requestData);
+    res.end();
+  });
 }
 
 // Start server
 server.listen(PORT, function() {
   console.log("Server listening on: http://localhost:" + PORT);
-});
-
-////////////////////////////////////////////////////////////////////////
-// Bandwidth
-////////////////////////////////////////////////////////////////////////
-$(document).ready(function() {
-  
-  const BandwidthMessaging = require('@bandwidth/messaging');
-  BandwidthMessaging.Configuration.basicAuthUserName = "token";
-  BandwidthMessaging.Configuration.basicAuthPassword = "secret";
-  const messagingController = BandwidthMessaging.APIController;
-  
-  // receive a text callback from bandwidth
-  app.post('/messages', function(req, res) {
-
-    if (!req.is('application/json')) {
-      res.sendStatus(415);
-    }
-
-    const data = req.body;
-    
-    console.log(data);
-
-    res.send("received!");
-  });
-
-
 });
