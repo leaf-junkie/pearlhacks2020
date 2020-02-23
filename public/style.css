@@ -1,0 +1,7 @@
+.active-message{
+  font-weight: 800;
+}
+
+#unreadContainer:hover {
+  cursor: pointer;
+}
