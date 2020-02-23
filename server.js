@@ -1,5 +1,6 @@
-// Server setup
-
+////////////////////////////////////////////////////////////////////////
+// Server 
+////////////////////////////////////////////////////////////////////////
 const http = require("http");
 const fs = require("fs");
 // Set port
@@ -26,4 +27,31 @@ function handleRequest(req, res) {
 // Start server
 server.listen(PORT, function() {
   console.log("Server listening on: http://localhost:" + PORT);
+});
+
+////////////////////////////////////////////////////////////////////////
+// Bandwidth
+////////////////////////////////////////////////////////////////////////
+$(document).ready(function() {
+  
+  const BandwidthMessaging = require('@bandwidth/messaging');
+  BandwidthMessaging.Configuration.basicAuthUserName = "token";
+  BandwidthMessaging.Configuration.basicAuthPassword = "secret";
+  const messagingController = BandwidthMessaging.APIController;
+  
+  // receive a text callback from bandwidth
+  app.post('/messages', function(req, res) {
+
+    if (!req.is('application/json')) {
+      res.sendStatus(415);
+    }
+
+    const data = req.body;
+    
+    console.log(data);
+
+    res.send("received!");
+  });
+
+
 });

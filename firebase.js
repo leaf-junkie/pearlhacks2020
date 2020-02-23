@@ -17,13 +17,14 @@ $(document).ready(function() {
     const database = firebase.database();
     const messages = database.ref('messages');
 
-    $("#sendAlertBtn").on("click", function() {
-        console.log("clicked");
-        $("#test").text(counter);
-        database.ref().set({
-            test: counter
-        });
-    });
+    const message = $(".active-message");
+
+    // create reference to db object
+    const dbRefObj = database().ref().child("message");
+
+    // sync object changes
+    dbRefObj.on('value', snap => console.log(snap.val()));
+
     
     // database.ref().on("value", function(snapshot) {
     //     console.log(snapshot.val());
