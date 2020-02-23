@@ -2,12 +2,13 @@ $(document).ready(function() {
 // reliefwebapi -- get most recent report
 function getReliefWeb(){
     $.ajax({
-      // url:"https://api.reliefweb.int/v1/reports?appname=apidoc&preset=latest&query[value]=earthquake&limit=1",
-      url:"https://api.reliefweb.int/v1/reports?appname=apidoc&preset=latest&limit=1",
+      url:"https://api.reliefweb.int/v1/disasters?appname=apidoc&preset=latest&limit=1",
+      // url:"https://api.reliefweb.int/v1/reports?appname=apidoc&preset=latest&limit=1",
       method:"GET"
     }).then(function(response){
       console.log(response);
-      var x = response.data[0].fields.title;
+      // var x = response.data[0].fields.title;
+      var x = response.data[0].fields.name;
       console.log(x)
       $("#newsAlert").text(x);
     })
@@ -153,6 +154,23 @@ $(".input").on('keydown', function(e){
     $(this).val('');    
     console.log(yourResponse)
   }
+})
+
+$("#link1").on('click', function(e){
+  e.preventDefault();
+  $("#box2").css("display","none")
+  $("#box1").css("display", "");
+  // $("#link2").removeClass("active-panel")
+  // $("#link1").addClass("active-panel")
+
+})
+
+$("#link2").on('click', function(e){
+  e.preventDefault();
+  $("#box2").css("display","")
+  $("#box1").css("display", "none");
+  // $("#link1").removeClass("active-panel")
+  // $("#link2").addClass("active-panel")
 })
 
 
