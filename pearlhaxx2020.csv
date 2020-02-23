@@ -1,0 +1,9 @@
+Message_ID,Message0001,Message0002,Message0003,Message0004,Message0005,Message0006,messagesm-bkc2vv7rshsc6f4d4wh2gbq,messagesm-ot56cqi5my7ao4am2qfxsoa,messagesm-y4f565qailipahnsl4evufi,messagesm-yrvlyiryb3kdgufs2quguea
+Direction,in,in,in,in,out,out,in,in,in,in
+From ,19192595847,18501234567,18371234567,17191234569,8502595847,19195252942,18503458305,19192595847,18503458305,18503458305
+State,received ,received,received,received,replied,delivered,received,received,received,received
+Text,"Help, a fire is approaching our house. We need to evacuate. What are the nearest shelters?",I need to know the closest hurricane evacuation route,"I felt a tremor, I want to know if there was an earthquake nearby. ",I heard on the news there is a fire nearby. Where can I get more information?,"The storm surge is rising, we are experiencing flooding. We are trapped and need assistance, 911 is busy.",Please move to the highest level of your house. We have contacted the fire department and they are on their way to assist.,Flood,Katie's first fire base test,Bruhhhh,"Hello, world!"
+Time ,February 22nd 2020 at 2:29:09 pm,February 22nd 2020 at 8:29:09 pm,January 17th 2020 at 2:29:09 pm,November 22nd 2019 at 12:29:09 pm,January 1st 2020 at 10:29:09 am,January 1st 2020 at 10:31:09 am,2020-02-23T10:55:20Z,2020-02-23T14:34:21Z,2020-02-23T08:56:11Z,2020-02-23T10:24:04Z
+To,19195252942,19195252942,19195252942,19195252942,19195252942,18502595847,19195252942,19195252942,19195252942,19195252942
+Tag,['fire'],['hurricane'],['earthquake'],['fire'],"['flood', 'storm']",['fire'],[],[],[],[]
+Severity,high,medium,medium,low,high,null,high,null,null,null
