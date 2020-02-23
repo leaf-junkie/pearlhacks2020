@@ -55,13 +55,20 @@ function createMessageTable() {
     var newMediaContentContainer =$("<div>").addClass("media-content");
     var newMediaContent = $("<div>").addClass("content");
 
-    var messageContainer = $("<p>")
-    var newNumber = $("<strong>").text(messages[i].from);
-    var newTime = $("<small>").text(messages[i].time);
-    newTime.css("margin-left", "2em");
+
+    var messageContainer = $(`<p data-index="${i}">`)
+    var newNumber = $(`<span class="phoneNumber" data-index="${i}">`).text(messages[i].from);
+    var newTime = $(`<span class="timeReceived" data-index="${i}">`).text(messages[i].time);
     var newbr = $("<br>");
-    newbr.css("margin", "2em")
-    var newMessage = $("<span>").text(messages[i].Text)
+    var newMessage = $(`<span class="message" data-index="${i}">`).text(messages[i].Text);
+    
+//     var messageContainer = $("<p>")
+//     var newNumber = $("<strong>").text(messages[i].from);
+//     var newTime = $("<small>").text(messages[i].time);
+//     newTime.css("margin-left", "2em");
+//     var newbr = $("<br>");
+//     newbr.css("margin", "2em")
+//     var newMessage = $("<span>").text(messages[i].Text)
 
     var newTagContainer = $("<nav>").addClass("level");
     newTagContainer = $("<nav>").addClass("is-mobile");
