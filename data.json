@@ -1,0 +1,554 @@
+{
+    "Message0001": {
+        "Direction": "in",
+        "From ": "+19192595847",
+        "State": "received ",
+        "Text": "Help, a fire is approaching our house. We need to evacuate. What are the nearest shelters?",
+        "Time ": "February 22nd 2020 at 2:29:09 pm",
+        "To": "+19195252942",
+        "Tag": [
+            "fire"
+        ],
+        "Severity": "high"
+    },
+    "Message0002": {
+        "Direction": "in",
+        "From": "+18501234567",
+        "State": "received",
+        "Text": "I need to know the closest hurricane evacuation route",
+        "Time": "February 22nd 2020 at 8:29:09 pm",
+        "To": "+19195252942",
+        "Tag": [
+            "hurricane"
+        ],
+        "Severity": "medium"
+    },
+    "Message0003": {
+        "Direction": "in",
+        "From": "+18371234567",
+        "State": "received",
+        "Text": "I felt a tremor, I want to know if there was an earthquake nearby. ",
+        "Time ": "January 17th 2020 at 2:29:09 pm",
+        "To": "+19195252942",
+        "Tag": [
+            "earthquake"
+        ],
+        "Severity": "medium"
+    },
+    "Message0004": {
+        "Direction": "in",
+        "From": "+17191234569",
+        "State": "received",
+        "Text": "I heard on the news there is a fire nearby. Where can I get more information?",
+        "Time": "November 22nd 2019 at 12:29:09 pm",
+        "To": "+19195252942",
+        "Tag": [
+            "fire"
+        ],
+        "Severity": ""
+    },
+    "Message0005": {
+        "Direction": "out",
+        "From": "+8502595847",
+        "State": "replied",
+        "Text": "The storm surge is rising, we are experiencing flooding. We are trapped and need assistance, 911 is busy.",
+        "Time": "January 1st 2020 at 10:29:09 am",
+        "To": "+19195252942",
+        "Tag": [
+            "flood",
+            "storm"
+        ],
+        "Severity": ""
+    },
+    "Message0006": {
+        "Direction": "out",
+        "From ": "+19195252942",
+        "State": "delivered",
+        "Text": "Please move to the highest level of your house. We have contacted the fire department and they are on their way to assist.",
+        "Time": "January 1st 2020 at 10:31:09 am",
+        "To": "+18502595847",
+        "Tag": [
+            "fire"
+        ],
+        "Severity": ""
+    },
+    "copy": {
+        "Message0001": {
+            "Direction": "in",
+            "From ": "+19192595847",
+            "Severity": "high",
+            "State": "received ",
+            "Tag": [
+                "fire"
+            ],
+            "Text": "Help, a fire is approaching our house. We need to evacuate. What are the nearest shelters?",
+            "Time ": "February 22nd 2020 at 2:29:09 pm",
+            "To": "+19195252942"
+        },
+        "Message0002": {
+            "Direction": "in",
+            "From": "+18501234567",
+            "Severity": "medium",
+            "State": "received",
+            "Tag": [
+                "hurricane"
+            ],
+            "Text": "I need to know the closest hurricane evacuation route",
+            "Time": "February 22nd 2020 at 8:29:09 pm",
+            "To": "+19195252942"
+        },
+        "Message0003": {
+            "Direction": "in",
+            "From": "+18371234567",
+            "Severity": "medium",
+            "State": "received",
+            "Tag": [
+                "earthquake"
+            ],
+            "Text": "I felt a tremor, I want to know if there was an earthquake nearby. ",
+            "Time ": "January 17th 2020 at 2:29:09 pm",
+            "To": "+19195252942"
+        },
+        "Message0004": {
+            "Direction": "in",
+            "From": "+17191234569",
+            "Severity": "",
+            "State": "received",
+            "Tag": [
+                "fire"
+            ],
+            "Text": "I heard on the news there is a fire nearby. Where can I get more information?",
+            "Time": "November 22nd 2019 at 12:29:09 pm",
+            "To": "+19195252942"
+        },
+        "Message0005": {
+            "Direction": "out",
+            "From": "+8502595847",
+            "Severity": "",
+            "State": "replied",
+            "Tag": [
+                "flood",
+                "storm"
+            ],
+            "Text": "The storm surge is rising, we are experiencing flooding. We are trapped and need assistance, 911 is busy.",
+            "Time": "January 1st 2020 at 10:29:09 am",
+            "To": "+19195252942"
+        },
+        "Message0006": {
+            "Direction": "out",
+            "From ": "+19195252942",
+            "Severity": "",
+            "State": "delivered",
+            "Tag": [
+                "fire"
+            ],
+            "Text": "Please move to the highest level of your house. We have contacted the fire department and they are on their way to assist.",
+            "Time": "January 1st 2020 at 10:31:09 am",
+            "To": "+18502595847"
+        },
+        "copy": {
+            "Message0001": {
+                "Direction": "in",
+                "From ": "+19192595847",
+                "Severity": "high",
+                "State": "received ",
+                "Tag": [
+                    "fire"
+                ],
+                "Text": "Help, a fire is approaching our house. We need to evacuate. What are the nearest shelters?",
+                "Time ": "February 22nd 2020 at 2:29:09 pm",
+                "To": "+19195252942"
+            },
+            "Message0002": {
+                "Direction": "in",
+                "From": "+18501234567",
+                "Severity": "medium",
+                "State": "received",
+                "Tag": [
+                    "hurricane"
+                ],
+                "Text": "I need to know the closest hurricane evacuation route",
+                "Time": "February 22nd 2020 at 8:29:09 pm",
+                "To": "+19195252942"
+            },
+            "Message0003": {
+                "Direction": "in",
+                "From": "+18371234567",
+                "Severity": "medium",
+                "State": "received",
+                "Tag": [
+                    "earthquake"
+                ],
+                "Text": "I felt a tremor, I want to know if there was an earthquake nearby. ",
+                "Time ": "January 17th 2020 at 2:29:09 pm",
+                "To": "+19195252942"
+            },
+            "Message0004": {
+                "Direction": "in",
+                "From": "+17191234569",
+                "Severity": "",
+                "State": "received",
+                "Tag": [
+                    "fire"
+                ],
+                "Text": "I heard on the news there is a fire nearby. Where can I get more information?",
+                "Time": "November 22nd 2019 at 12:29:09 pm",
+                "To": "+19195252942"
+            },
+            "Message0005": {
+                "Direction": "out",
+                "From": "+8502595847",
+                "Severity": "",
+                "State": "replied",
+                "Tag": [
+                    "flood",
+                    "storm"
+                ],
+                "Text": "The storm surge is rising, we are experiencing flooding. We are trapped and need assistance, 911 is busy.",
+                "Time": "January 1st 2020 at 10:29:09 am",
+                "To": "+19195252942"
+            },
+            "Message0006": {
+                "Direction": "out",
+                "From ": "+19195252942",
+                "Severity": "",
+                "State": "delivered",
+                "Tag": [
+                    "fire"
+                ],
+                "Text": "Please move to the highest level of your house. We have contacted the fire department and they are on their way to assist.",
+                "Time": "January 1st 2020 at 10:31:09 am",
+                "To": "+18502595847"
+            },
+            "Severity": "",
+            "copy": {
+                "Message0001": {
+                    "Direction": "in",
+                    "From ": "+19192595847",
+                    "Severity": "high",
+                    "State": "received ",
+                    "Tag": [
+                        "fire"
+                    ],
+                    "Text": "Help, a fire is approaching our house. We need to evacuate. What are the nearest shelters?",
+                    "Time ": "February 22nd 2020 at 2:29:09 pm",
+                    "To": "+19195252942"
+                },
+                "Message0002": {
+                    "Direction": "in",
+                    "From": "+18501234567",
+                    "Severity": "medium",
+                    "State": "received",
+                    "Tag": [
+                        "hurricane"
+                    ],
+                    "Text": "I need to know the closest hurricane evacuation route",
+                    "Time": "February 22nd 2020 at 8:29:09 pm",
+                    "To": "+19195252942"
+                },
+                "Message0003": {
+                    "Direction": "in",
+                    "From": "+18371234567",
+                    "Severity": "medium",
+                    "State": "received",
+                    "Tag": [
+                        "earthquake"
+                    ],
+                    "Text": "I felt a tremor, I want to know if there was an earthquake nearby. ",
+                    "Time ": "January 17th 2020 at 2:29:09 pm",
+                    "To": "+19195252942"
+                },
+                "Message0004": {
+                    "Direction": "in",
+                    "From": "+17191234569",
+                    "Severity": "",
+                    "State": "received",
+                    "Tag": [
+                        "fire"
+                    ],
+                    "Text": "I heard on the news there is a fire nearby. Where can I get more information?",
+                    "Time": "November 22nd 2019 at 12:29:09 pm",
+                    "To": "+19195252942"
+                },
+                "Message0005": {
+                    "Direction": "out",
+                    "From": "+8502595847",
+                    "Severity": "",
+                    "State": "replied",
+                    "Tag": [
+                        "flood",
+                        "storm"
+                    ],
+                    "Text": "The storm surge is rising, we are experiencing flooding. We are trapped and need assistance, 911 is busy.",
+                    "Time": "January 1st 2020 at 10:29:09 am",
+                    "To": "+19195252942"
+                },
+                "Message0006": {
+                    "Direction": "out",
+                    "From ": "+19195252942",
+                    "Severity": "",
+                    "State": "delivered",
+                    "Tag": [
+                        "fire"
+                    ],
+                    "Text": "Please move to the highest level of your house. We have contacted the fire department and they are on their way to assist.",
+                    "Time": "January 1st 2020 at 10:31:09 am",
+                    "To": "+18502595847"
+                },
+                "Severity": "",
+                "copy": {
+                    "Message0001": {
+                        "Direction": "in",
+                        "From ": "+19192595847",
+                        "Severity": "high",
+                        "State": "received ",
+                        "Tag": [
+                            "fire"
+                        ],
+                        "Text": "Help, a fire is approaching our house. We need to evacuate. What are the nearest shelters?",
+                        "Time ": "February 22nd 2020 at 2:29:09 pm",
+                        "To": "+19195252942"
+                    },
+                    "Message0002": {
+                        "Direction": "in",
+                        "From": "+18501234567",
+                        "Severity": "medium",
+                        "State": "received",
+                        "Tag": [
+                            "hurricane"
+                        ],
+                        "Text": "I need to know the closest hurricane evacuation route",
+                        "Time": "February 22nd 2020 at 8:29:09 pm",
+                        "To": "+19195252942"
+                    },
+                    "Message0003": {
+                        "Direction": "in",
+                        "From": "+18371234567",
+                        "Severity": "medium",
+                        "State": "received",
+                        "Tag": [
+                            "earthquake"
+                        ],
+                        "Text": "I felt a tremor, I want to know if there was an earthquake nearby. ",
+                        "Time ": "January 17th 2020 at 2:29:09 pm",
+                        "To": "+19195252942"
+                    },
+                    "Message0004": {
+                        "Direction": "in",
+                        "From": "+17191234569",
+                        "Severity": "",
+                        "State": "received",
+                        "Tag": [
+                            "fire"
+                        ],
+                        "Text": "I heard on the news there is a fire nearby. Where can I get more information?",
+                        "Time": "November 22nd 2019 at 12:29:09 pm",
+                        "To": "+19195252942"
+                    },
+                    "Message0005": {
+                        "Direction": "out",
+                        "From": "+8502595847",
+                        "Severity": "",
+                        "State": "replied",
+                        "Tag": [
+                            "flood",
+                            "storm"
+                        ],
+                        "Text": "The storm surge is rising, we are experiencing flooding. We are trapped and need assistance, 911 is busy.",
+                        "Time": "January 1st 2020 at 10:29:09 am",
+                        "To": "+19195252942"
+                    },
+                    "Message0006": {
+                        "Direction": "out",
+                        "From ": "+19195252942",
+                        "Severity": "",
+                        "State": "delivered",
+                        "Tag": [
+                            "fire"
+                        ],
+                        "Text": "Please move to the highest level of your house. We have contacted the fire department and they are on their way to assist.",
+                        "Time": "January 1st 2020 at 10:31:09 am",
+                        "To": "+18502595847"
+                    },
+                    "Severity": "",
+                    "messagesm-bkc2vv7rshsc6f4d4wh2gbq": {
+                        "Severity": "",
+                        "direction": "in",
+                        "from": "+18503458305",
+                        "messageId": "m-bkc2vv7rshsc6f4d4wh2gbq",
+                        "state": "received",
+                        "text": "Flood",
+                        "time": "2020-02-23T10:55:20Z",
+                        "to": "+19195252942"
+                    },
+                    "messagesm-y4f565qailipahnsl4evufi": {
+                        "Severity": "",
+                        "direction": "in",
+                        "from": "+18503458305",
+                        "messageId": "m-y4f565qailipahnsl4evufi",
+                        "state": "received",
+                        "text": "Bruhhhh",
+                        "time": "2020-02-23T08:56:11Z",
+                        "to": "+19195252942"
+                    },
+                    "messagesm-yrvlyiryb3kdgufs2quguea": {
+                        "Severity": "",
+                        "direction": "in",
+                        "from": "+18503458305",
+                        "messageId": "m-yrvlyiryb3kdgufs2quguea",
+                        "state": "received",
+                        "text": "Hello, world!",
+                        "time": "2020-02-23T10:24:04Z",
+                        "to": "+19195252942"
+                    }
+                },
+                "messagesm-bkc2vv7rshsc6f4d4wh2gbq": {
+                    "Severity": "",
+                    "direction": "in",
+                    "from": "+18503458305",
+                    "messageId": "m-bkc2vv7rshsc6f4d4wh2gbq",
+                    "state": "received",
+                    "text": "Flood",
+                    "time": "2020-02-23T10:55:20Z",
+                    "to": "+19195252942"
+                },
+                "messagesm-y4f565qailipahnsl4evufi": {
+                    "Severity": "",
+                    "direction": "in",
+                    "from": "+18503458305",
+                    "messageId": "m-y4f565qailipahnsl4evufi",
+                    "state": "received",
+                    "text": "Bruhhhh",
+                    "time": "2020-02-23T08:56:11Z",
+                    "to": "+19195252942"
+                },
+                "messagesm-yrvlyiryb3kdgufs2quguea": {
+                    "Severity": "",
+                    "direction": "in",
+                    "from": "+18503458305",
+                    "messageId": "m-yrvlyiryb3kdgufs2quguea",
+                    "state": "received",
+                    "text": "Hello, world!",
+                    "time": "2020-02-23T10:24:04Z",
+                    "to": "+19195252942"
+                }
+            },
+            "messagesm-bkc2vv7rshsc6f4d4wh2gbq": {
+                "Severity": "",
+                "direction": "in",
+                "from": "+18503458305",
+                "messageId": "m-bkc2vv7rshsc6f4d4wh2gbq",
+                "state": "received",
+                "text": "Flood",
+                "time": "2020-02-23T10:55:20Z",
+                "to": "+19195252942"
+            },
+            "messagesm-y4f565qailipahnsl4evufi": {
+                "Severity": "",
+                "direction": "in",
+                "from": "+18503458305",
+                "messageId": "m-y4f565qailipahnsl4evufi",
+                "state": "received",
+                "text": "Bruhhhh",
+                "time": "2020-02-23T08:56:11Z",
+                "to": "+19195252942"
+            },
+            "messagesm-yrvlyiryb3kdgufs2quguea": {
+                "Severity": "",
+                "direction": "in",
+                "from": "+18503458305",
+                "messageId": "m-yrvlyiryb3kdgufs2quguea",
+                "state": "received",
+                "text": "Hello, world!",
+                "time": "2020-02-23T10:24:04Z",
+                "to": "+19195252942"
+            }
+        },
+        "messagesm-bkc2vv7rshsc6f4d4wh2gbq": {
+            "Severity": "",
+            "direction": "in",
+            "from": "+18503458305",
+            "messageId": "m-bkc2vv7rshsc6f4d4wh2gbq",
+            "state": "received",
+            "text": "Flood",
+            "time": "2020-02-23T10:55:20Z",
+            "to": "+19195252942"
+        },
+        "messagesm-ot56cqi5my7ao4am2qfxsoa": {
+            "Severity": "",
+            "direction": "in",
+            "from": "+19192595847",
+            "messageId": "m-ot56cqi5my7ao4am2qfxsoa",
+            "state": "received",
+            "text": "Katie's first fire base test",
+            "time": "2020-02-23T14:34:21Z",
+            "to": "+19195252942"
+        },
+        "messagesm-y4f565qailipahnsl4evufi": {
+            "Severity": "",
+            "direction": "in",
+            "from": "+18503458305",
+            "messageId": "m-y4f565qailipahnsl4evufi",
+            "state": "received",
+            "text": "Bruhhhh",
+            "time": "2020-02-23T08:56:11Z",
+            "to": "+19195252942"
+        },
+        "messagesm-yrvlyiryb3kdgufs2quguea": {
+            "Severity": "",
+            "direction": "in",
+            "from": "+18503458305",
+            "messageId": "m-yrvlyiryb3kdgufs2quguea",
+            "state": "received",
+            "text": "Hello, world!",
+            "time": "2020-02-23T10:24:04Z",
+            "to": "+19195252942"
+        },
+        "Tag": [],
+        "Severity": ""
+    },
+    "messagesm-bkc2vv7rshsc6f4d4wh2gbq": {
+        "direction": "in",
+        "from": "+18503458305",
+        "messageId": "m-bkc2vv7rshsc6f4d4wh2gbq",
+        "state": "received",
+        "text": "Flood",
+        "time": "2020-02-23T10:55:20Z",
+        "to": "+19195252942",
+        "Tag": [],
+        "Severity": ""
+    },
+    "messagesm-ot56cqi5my7ao4am2qfxsoa": {
+        "direction": "in",
+        "from": "+19192595847",
+        "messageId": "m-ot56cqi5my7ao4am2qfxsoa",
+        "state": "received",
+        "text": "Katie's first fire base test",
+        "time": "2020-02-23T14:34:21Z",
+        "to": "+19195252942",
+        "Tag": [],
+        "Severity": ""
+    },
+    "messagesm-y4f565qailipahnsl4evufi": {
+        "direction": "in",
+        "from": "+18503458305",
+        "messageId": "m-y4f565qailipahnsl4evufi",
+        "state": "received",
+        "text": "Bruhhhh",
+        "time": "2020-02-23T08:56:11Z",
+        "to": "+19195252942",
+        "Tag": [],
+        "Severity": ""
+    },
+    "messagesm-yrvlyiryb3kdgufs2quguea": {
+        "direction": "in",
+        "from": "+18503458305",
+        "messageId": "m-yrvlyiryb3kdgufs2quguea",
+        "state": "received",
+        "text": "Hello, world!",
+        "time": "2020-02-23T10:24:04Z",
+        "to": "+19195252942",
+        "Tag": [],
+        "Severity": ""
+    }
+}
