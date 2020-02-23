@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disaster Relief</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
@@ -29,77 +30,48 @@
 
       <div class="tabs is-toggle is-fullwidth" style="margin-top:0">
         <ul>
-          <li class="is-active"><a>Incoming Messages</a></li>
-          <li><a>Sent Messages</a></li>
-          <li><a>Data</a></li>
+          <li id="unreadTab" class="is-active"><a>Incoming Messages</a></li>
+          <li id="sentTab"><a>Sent Messages</a></li>
+          <li id="dataTab"><a>Data</a></li>
         </ul>
       </div>
+<!-- unread messages view goes here -->
+      <div id="unreadView">
+        <div id="response-container" style="display:none">
+          <input class="input is-fullwidth" type="text" placeholder="Text input">
+        </div>
+        <br>
+        <div class="container is-fluid columns">
 
-      <br>
-      <div class="container is-fluid columns">
-
-        <!-- unread messages -->
-        <table class="table is-striped is-fullwidth">
-          <thead>
-            <tr>
-              <th>Priority</th>
-              <th>Message</th>
-              <th>Phone Number</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>1</th>
-              <td>Text Message content</td>
-              <td>(919)999-9999</td>
-            </tr>
-            <tr>
-              <th>2</th>
-              <td>Text Message content 2</td>
-              <td>(919)888-8888</td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- <aside class="menu column is-one-fifth">
-          <p class="menu-label">
-            General
-          </p>
-          <ul class="menu-list">
-            <li><a>Dashboard</a></li>
-            <li><a>Customers</a></li>
-          </ul>
-          <p class="menu-label">
-            Administration
-          </p>
-          <ul class="menu-list">
-            <li><a>Team Settings</a></li>
-            <li>
-              <a class="is-active">Manage Your Team</a>
-              <ul>
-                <li><a>Members</a></li>
-                <li><a>Plugins</a></li>
-                <li><a>Add a member</a></li>
-              </ul>
-            </li>
-            <li><a>Invitations</a></li>
-            <li><a>Cloud Storage Environment Settings</a></li>
-            <li><a>Authentication</a></li>
-          </ul>
-          <p class="menu-label">
-            Transactions
-          </p>
-          <ul class="menu-list">
-            <li><a>Payments</a></li>
-            <li><a>Transfers</a></li>
-            <li><a>Balance</a></li>
-          </ul>
-        </aside>
-
-        <section>
-          <img src="https://fuzzyscience.files.wordpress.com/2012/02/disasters51.jpg" style="height: 30%;">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12927.222655335232!2d-79.05320545!3d35.902775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1582394676090!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </section> -->
+          <!-- insert unread messages -->
+          <table class="table is-fullwidth">
+            <thead>
+              <tr>
+                <th>Priority</th>
+                <th>Message</th>
+                <th>Phone Number</th>
+              </tr>
+            </thead>
+            <tbody id="unreadContainer">
+            </tbody>
+          </table>
+    
+        </div>
       </div>
+
+<!-- sent messages view -->
+        <div id="sentView" style="display:none">
+          <h1>Sent Messages</h1>
+
+
+        </div>
+
+<!-- data goes here -->
+        <div id="dataView" style="display:none">
+
+          <h1>Data Analysis</h1>
+          
+        </div>
 
       <!-- <script src="/__/firebase/7.9.1/firebase-app.js"></script> -->
 
